@@ -1,12 +1,61 @@
-# React + Vite
+![Project Screenshot](./cover.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌐 Awwwards-Inspired Website  
 
-Currently, two official plugins are available:
+A visually captivating website built with **React.js, Tailwind CSS, and GSAP**, featuring scroll-triggered animations, smooth video transitions, and a luxurious, modern UI/UX.  
+Inspired by [Zentry](https://zentry.com) and built step by step by following [JavaScript Mastery’s tutorial](https://www.youtube.com/watch?v=zA9r5zTllx4).  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📋 Table of Contents
+- [Introduction](#-introduction)  
+- [Tech Stack](#-tech-stack)  
+- [Features](#-features)  
+- [Setup](#-setup)  
+- [Usage](#-usage)  
+- [Project Structure](#-project-structure)  
+- [Assets](#-assets)  
+- [Disclaimer](#-disclaimer)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🤖 Introduction
+This project recreates an **Awwwards-winning style website**, packed with engaging animations and immersive storytelling.  
+It’s designed to help developers learn **GSAP animations**, **React component architecture**, and **responsive design** techniques.
+
+---
+
+## ⚙️ Tech Stack
+- ⚡ **React.js** – Component-based UI  
+- 🎨 **Tailwind CSS** – Utility-first styling  
+- 🎞 **GSAP (GreenSock Animation Platform)** – Smooth animations & scroll effects  
+
+---
+
+## 🔋 Features
+- 🎥 **Video Transitions** – Seamlessly integrated videos for storytelling  
+- 📜 **Scroll-Based Animations** – Trigger animations while scrolling  
+- 🔷 **Clip-Path Transitions** – Unique geometric transitions with CSS  
+- 🌀 **3D Hover Effects** – Interactive hover animations  
+- 📱 **Responsive Design** – Works across all screen sizes  
+- 🧩 **Reusable Components** – Clean and modular architecture  
+
+---
+
+## 🤸 Setup
+
+### 1. Prerequisites
+Make sure you have installed:
+- [Node.js](https://nodejs.org/) (v16+)  
+- [Git](https://git-scm.com/)  
+
+### 2. Installation
+```bash
+# Clone the repository
+git clone https://github.com/your-username/awwwards-website.git
+
+# Navigate to project folder
+cd awwwards-website
+
+# Install dependencies
+npm install
