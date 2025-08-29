@@ -36,7 +36,8 @@ const BentoTilt = ({children , className=''})=>{
 const BentoCard = ({src , title , description , isComingSoon})=>{
     return (
         <div className="relative size-full">
-            <video src={src} loop autoPlay muted className="absolute left-0 top-0 size-full object-cover object-center"/>
+            <video src={src} loop autoPlay muted  playsInline
+  webkit-playsinline="true" className="absolute left-0 top-0 size-full object-cover object-center"/>
             <div className="relative z-10 flex size-full flex-col p-5 text-blue-50">
                 <h1 className="bento-title special-font">
                     {title}
