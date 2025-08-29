@@ -1,4 +1,4 @@
-![Project Screenshot](./cover.png)
+![Project Screenshot](./public/img/cover.png)
 
 # 🌐 Awwwards-Inspired Website  
 
