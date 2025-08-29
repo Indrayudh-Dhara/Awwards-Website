@@ -110,11 +110,14 @@ const Hero = () => {
             <div>
                 <div className='mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg group'>
                     <div onClick={handleMiniVdClick} className='origin-center scale-30 opacity-0 transition-all duration-500 ease-in group-hover:scale-100 group-hover:opacity-100'>
-                        <video loop muted id='current-video'  ref={nextVideoRef} src={getVideoSrc(upcomingVideoIndex)} onLoadedData={handleVideoLoad} className='size-64 origin-center scale-150 object-cover object-center'/>
+                        <video loop muted   playsInline
+  webkit-playsinline="true" id='current-video'  ref={nextVideoRef} src={getVideoSrc(upcomingVideoIndex)} onLoadedData={handleVideoLoad} className='size-64 origin-center scale-150 object-cover object-center'/>
                     </div>
                 </div>
-                <video loop muted id='next-video' className='absolute-center invisible absolute z-20 size-64 object-cover object-center' ref={nextVideoRef} src={getVideoSrc(currentIndex)} onLoadedData={handleVideoLoad}/>
-                <video src={getVideoSrc(currentIndex === totalVideos-1 ? 1:currentIndex)} autoPlay loop muted className='absolute left-0 top-0 size-full object-cover object-center' onLoadedData={handleVideoLoad}/>
+                <video loop muted   playsInline
+  webkit-playsinline="true" id='next-video' className='absolute-center invisible absolute z-20 size-64 object-cover object-center' ref={nextVideoRef} src={getVideoSrc(currentIndex)} onLoadedData={handleVideoLoad}/>
+                <video src={getVideoSrc(currentIndex === totalVideos-1 ? 1:currentIndex)} autoPlay loop muted   playsInline
+  webkit-playsinline="true" className='absolute left-0 top-0 size-full object-cover object-center' onLoadedData={handleVideoLoad}/>
             </div>
             <h1 className='special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75'>G<b>a</b>ming</h1>
             <div className='absolute left-0 top-0 z-40 size-full'>
