@@ -87,7 +87,8 @@ Immerse yourself in an IP-rich product universe where players, agentic AI and bl
                     </div>
                 </BentoTilt>
                 <BentoTilt className="bento-tilt_2">
-                    <video src="videos/feature-5.mp4" loop muted autoPlay className="size-full object-cover object-center"/>
+                    <video src="videos/feature-5.mp4" loop muted autoPlay  playsInline
+  webkit-playsinline="true" className="size-full object-cover object-center"/>
                 </BentoTilt>
             </div>
 
