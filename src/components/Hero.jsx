@@ -62,6 +62,7 @@ const Hero = () => {
     } , {dependencies : [currentIndex] , revertOnUpdate:true});
 
     useGSAP(()=>{
+        
         gsap.set('#video-frame' , {
             clipPath : 'polygon(14% 0%, 72% 0%, 88% 90%, 0% 95%)', //from css clip path maker (to make an image take diff shape)
             borderRadius : '0% 0% 40% 10%'
@@ -79,6 +80,18 @@ const Hero = () => {
         })
     })
 
+    useGSAP(() => {
+  // whenever the mini box video changes
+  gsap.from("#current-video", {
+    scale: 1,
+    opacity: 0,
+    duration: 1,
+    ease : 'power1.inOut', // nice pop-in
+  });
+}, { dependencies: [upcomingVideoIndex], revertOnUpdate: true });
+
+
+
 
     const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
   return (
@@ -95,8 +108,8 @@ const Hero = () => {
         )}
         <div id='video-frame' className='relative z-10 h-dvh w-screen overflow-hidden rounded-lg lg-blue-75'>
             <div>
-                <div className='mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg'>
-                    <div onClick={handleMiniVdClick} className='origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100'>
+                <div className='mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg group'>
+                    <div onClick={handleMiniVdClick} className='origin-center scale-30 opacity-0 transition-all duration-500 ease-in group-hover:scale-100 group-hover:opacity-100'>
                         <video loop muted id='current-video'  ref={nextVideoRef} src={getVideoSrc(upcomingVideoIndex)} onLoadedData={handleVideoLoad} className='size-64 origin-center scale-150 object-cover object-center'/>
                     </div>
                 </div>
