@@ -121,7 +121,7 @@ body {
 }
 
 .bento-tilt_1 {
-  @apply relative border border-white/20 col-span-2 overflow-hidden rounded-md 
+  @apply relative border border-white/20 md:col-span-1 col-span-2 overflow-hidden rounded-md 
     transition-transform duration-300 ease-out;
 }
 
